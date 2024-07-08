@@ -1,0 +1,118 @@
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-10px);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    75% {
+        transform: translateX(-10px);
+    }
+}
+
+.shake {
+    animation: shake 0.5s;
+}
+
+body {
+
+   
+  /*background: url(img_flwr.gif) right bottom no-repeat, url(paper.gif) left top repeat;*/
+
+
+    background:  url(img2.jpg) left top repeat;
+
+      
+      
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+   
+      /*
+      rotate the form
+      transform: rotate(20deg);
+      */
+      
+     
+}
+
+
+.container {
+    background-color: white;
+    backdrop-filter: blur(30px);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+     backdrop-filter: blur(30px);
+     background:rgba(255,255,255,0.2);
+     border: 1px solid rgba(255,255,255,0.5);
+   
+}
+
+h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+    display: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.message {
+    display: none;
+    text-align: center;
+}
+
+.thank-you-message {
+    display: none;
+}
+
+.error-message-container {
+    display: none;
+    color: red;
+}
